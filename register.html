@@ -5,21 +5,22 @@
     <title>DangKy</title>
     <link rel="stylesheet" href="Css/register.css">
 
+
 </head>
 <body>
-<form action="">
+
     <table>
         <tr>
             <th colspan="4">HỘI VIÊN MỚI</th>
         </tr>
         <tr>
             <td>Họ tên</td>
-            <td colspan="2"><input type="text" size="30px" value=""></td>
+            <td colspan="2"><input id="fullname" type="text" size="30px" value=""></td>
         </tr>
-        <tr>
-            <td>Mật khẩu</td>
-            <td colspan="2"><input type="password" size="30px" value=""></td>
-        </tr>
+<!--        <tr>-->
+<!--            <td>Mật khẩu</td>-->
+<!--            <td colspan="2"><input id="mk" type="password" size="30px" value=""></td>-->
+<!--        </tr>-->
 
         <tr>
             <td>Ngày sinh</td>
@@ -27,23 +28,23 @@
         </tr>
         <tr>
             <td>Giới tính</td>
-            <td><input type="radio" name="gender" checked>Nam</td>
-            <td colspan="2"><input type="radio" name="gender">Nữ</td>
+            <td><input type="radio" id="male" name="gender" checked>Nam</td>
+            <td colspan="2"><input type="radio" id="female" name="gender">Nữ</td>
         </tr>
         <tr>
             <td>Email</td>
-            <td colspan="2"><input type="text" value=""></td>
+            <td colspan="2"><input id="mail" type="text" value=""></td>
         </tr>
         <tr>
             <td colspan="2">
-                <button onclick="">Đăng ký</button>
+                <button onclick="saveData()">Đăng ký</button>
             </td>
             <td colspan="2">
-                <button onclick="">Reset</button>
+                <button onclick="saveData()">Reset</button>
             </td>
         </tr>
     </table>
-</form>
+
 </body>
 </html>
 <script src="Js/login.js"></script>

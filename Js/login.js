@@ -1,3 +1,21 @@
+localStorage.setItem("account", "12365");
+console.log(localStorage.getItem("account"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function login() {
     let userName = document.getElementById("user").value;
     let pass = document.getElementById("pass").value;
@@ -17,7 +35,7 @@ function register() {
 
 function saveData() {
     let fullname = document.getElementById("fullname").value;
-    // let  a = document.getElementById("mk").value;
+    let ps = document.getElementById("mk").value;
     let mail = document.getElementById("mail").value;
     let gender = " ";
     //kiem tra gioi tinh
@@ -27,14 +45,13 @@ function saveData() {
         gender = document.getElementById("female").innerHTML = 2;
     }
     //luu tk vao vung nho
+    if (fullname && mail) {
+        let account = [];
+        account.push({
+            nameUser: fullname,
+            passWord: ps
+        });
+        console.log(account);
+    }
 
-}
-
-    // if (fullname && mail) {
-    //     let student = {
-    //         user: fullname,
-    //         pass: mail,
-    //     };
-    // }
-    console.log(fullname, mail, gender);
 }
